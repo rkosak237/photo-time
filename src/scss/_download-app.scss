@@ -1,0 +1,58 @@
+.download-app {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+
+    &__title {
+        text-transform: uppercase;
+        color: $text-bold;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: $text-bold;
+        text-align: center;
+        text-transform: uppercase;
+        width: 64rem;
+        margin-bottom: 3rem;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 38.625rem;
+    }
+}
+
+
+.download-app__text {
+    @media (max-width: $tablet-landscape) {
+        width: 75%;
+    }
+}
+
+.download-app__buttons {
+    @media (max-width: $tablet) {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 7rem;
+        align-content: space-between;
+    }
+}
+
+.button-store {
+    @media (max-width: $tablet) {
+        width: 70%;
+        margin: 0;
+    }
+}

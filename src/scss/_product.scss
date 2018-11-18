@@ -1,0 +1,75 @@
+.product {
+    overflow: hidden;
+
+    &__wrapper {
+        position: relative;
+        box-sizing: border-box;
+        padding: 8rem 1rem;
+    }
+}
+
+.product__wrapper, .design__wrapper {
+     @media (max-width: $tablet-landscape) {padding: 3rem 1rem;}
+     @media all and (min-width: $tablet)
+     and (max-width: $tablet-landscape) { width: 90%;}
+
+}
+
+.article {
+    color: $text-section;
+    width: 30rem;
+    @media all and (min-width: $phone) and (max-width: $tablet) {
+        width: 70%;
+    }
+
+    &__title {
+        color: $accent-color;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        line-height: 2rem;
+        width: 100%;
+        letter-spacing: 1.5px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+
+    &__span {
+        font-weight: 800;
+        color: $text-bold;
+    }
+}
+
+.mockup-container {
+    margin: 0;
+    position: relative;
+
+    &__product {
+        width: 51rem;
+        position: absolute;
+        bottom: -23rem;
+        right: -7rem;
+
+        @media all and (min-width: $tablet) and (max-width: $tablet-landscape) {width: 47rem;}
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__design {
+        bottom: -8rem;
+        left: 3rem;
+        @media all and (min-width: $tablet) and (max-width: $tablet-landscape) {
+
+        }
+
+        @media (max-width: $tablet) {
+            display: none;
+         }
+    }
+    &__img {
+        width: 90%;
+    }
+}
